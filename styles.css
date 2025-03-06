@@ -1,0 +1,588 @@
+/* Import Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Scroll morbido */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #3c7d29;
+  color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: padding 0.3s, height 0.3s;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px 20px;
+}
+
+header.shrink .header-container {
+  padding: 5px 20px;
+}
+
+header.shrink h1 {
+  font-size: 1.4em;
+}
+
+header.shrink nav ul li a {
+  font-size: 1em;
+}
+
+header h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  transition: font-size 0.3s;
+}
+
+/* Pulsante hamburger */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+/* Nav */
+nav ul.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul.nav-links li a {
+  font-size: 1.1em;
+  font-weight: 700; /* grassetto */
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 8px;
+  transition: background-color 0.3s, color 0.3s, font-size 0.3s;
+}
+
+/* Link attivo */
+nav ul.nav-links li a.active {
+  background-color: #2f50ff;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Hero */
+#hero {
+  min-height: 80vh; 
+  background-color: #02015e; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding-top: 120px;
+  padding-bottom: 20px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-text {
+  text-align: left;
+  max-width: 50%;
+}
+
+.hero-image {
+  max-width: 50%;
+  text-align: right;
+}
+
+.profile-photo {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+#hero h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero-line {
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 2px;
+}
+
+.hero-subtitle {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+/* Sezione generiche */
+section {
+  padding: 60px 20px;
+}
+
+/* Researches */
+#researches {
+  background: #f7f7f7;
+  text-align: center;
+}
+
+#researches h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-line {
+  width: 80px;
+  height: 4px;
+  background-color: #2f50ff;
+  margin: 0 auto 40px auto;
+  border-radius: 2px;
+}
+
+.researches-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.research-box {
+  background: #fff;
+  width: 550px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-align: left;
+}
+
+.research-box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.research-box h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin: 15px;
+}
+
+.research-box p {
+  font-size: 0.9em;
+  font-weight: 400;
+  margin: 0 15px 15px;
+  line-height: 1.4;
+}
+
+/* Pulsante Thesis */
+.button-thesis {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 15px;
+  padding: 10px 20px;
+  background-color: #1a4f7d;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.button-thesis:hover {
+  background-color: #143957;
+}
+
+/* Projects */
+#projects {
+  background: #fff;
+  text-align: center;
+}
+
+/* Nascondi di default il carosello mobile su desktop */
+#projects-mobile {
+  display: none;
+}
+
+#projects h2 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* Carosello container */
+.carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Frecce */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #2f50ff;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  font-size: 1.2em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-arrow:hover {
+  background-color: #253ebb;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.left-arrow {
+  left: 3px;
+}
+
+.right-arrow {
+  right: 3px;
+}
+
+/* Container orizzontale delle slide */
+.projects-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Ogni .project-group è una slide larga 100% */
+.project-group {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: nowrap;
+  padding: 0 20px;
+}
+
+/* Desktop: 2 progetti per slide => each .project-box ~ 45% */
+.project-box {
+  background: #f9f9f9;
+  flex: 0 0 45%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+}
+
+.project-box h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.project-box p {
+  font-size: 0.95em;
+  line-height: 1.4;
+  margin: 0 0 auto 0;
+}
+
+/* Pulsante del progetto */
+.button-container {
+  margin: 1em 0 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.project-button {
+  display: inline-block;
+  background-color: #1a4f7d;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-bottom: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.project-button:hover {
+  background-color: #143957;
+}
+
+.project-divider {
+  margin: 1em 0 0.5em 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.project-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.tag {
+  background-color: #2f50ff;
+  color: #fff;
+  font-size: 0.85em;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* About Me */
+#about {
+  min-height: 65vh; 
+  background-color: #02015e;
+  text-align: center;
+  color: #fff;
+  padding: 60px 20px 0;
+}
+
+.about-line {
+  margin-bottom: 60px !important;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-gif {
+  width: 550px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about-cv-btn {
+  font-size: 1.2em;
+  padding: 15px 25px;
+}
+
+.cv-update {
+  font-size: 1em;
+  color: #ccc;
+  margin-top: -5px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #3c7d29;
+  color: #fff;
+  margin-top: 0;
+}
+
+/* Animazioni on scroll */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.hero-anim.animate-in {
+  animation: fadeDown 1.2s ease-out forwards;
+}
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.researches-anim.animate-in {
+  animation: zoomIn 1.2s ease-out forwards;
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.projects-anim.animate-in {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.about-anim.animate-in {
+  animation: slideUp 2s ease-out forwards;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Responsive < 992px: mobile => 1 progetto per slide (qui ne abbiamo 4 slide totali) --- */
+@media (max-width: 992px) {
+  .menu-toggle {
+    display: block;
+    margin-left: auto; 
+  }
+  nav ul.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px; 
+    right: 0;
+    width: 100%;
+    background: #3c7d29;
+  }
+  nav ul.nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #2f50ff;
+  }
+  nav ul.nav-links li a {
+    display: block;
+    width: 100%;
+  }
+  nav ul.nav-links.open {
+    display: flex;
+    animation: slideDown 0.3s ease-in-out;
+  }
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-text,
+  .hero-image {
+    max-width: 100%;
+  }
+  .hero-image {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  /* Nasconde Desktop, mostra Mobile */
+  #projects-desktop {
+    display: none !important;
+  }
+  #projects-mobile {
+    display: block !important;
+  }
+
+  /* Ridimensiona il singolo progetto per evitare sovrapposizioni */
+  #projects-mobile .project-group {
+    gap: 0;
+    padding: 0 20px;
+    justify-content: center;
+  }
+  #projects-mobile .project-box {
+    flex: 1 0 100%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Riduce leggermente le frecce su mobile */
+  .carousel-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+  }
+}
+
+/* --- Responsive < 576px --- */
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.6em;
+  }
+  nav ul.nav-links {
+    gap: 5px;
+  }
+  .hero-text h2 {
+    font-size: 1.8em;
+  }
+  .hero-subtitle {
+    font-size: 1.1em;
+  }
+  .about-container .about-gif {
+    width: 95%;
+  }
+  .about-cv-btn {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}

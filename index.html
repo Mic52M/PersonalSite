@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Michele Mastroberti</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon_io/favicon.ico" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  
+  <!-- Font Awesome 6.4.0 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1>Michele Mastroberti</h1>
+      <!-- Pulsante mobile per il menu -->
+      <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#researches">Researches</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="animate-on-scroll hero-anim">
+    <div class="hero-container container">
+      <div class="hero-text">
+        <h2>CyberSecurity Student & ML/AI Enthusiast</h2>
+        <div class="hero-line"></div>
+        <p class="hero-subtitle">
+          Cybersecurity student passionate about ML/AI, always looking for new challenges 
+          and innovative solutions. My greatest passion is video games, and I aspire to one day 
+          harness the power of AI to push the boundaries of gaming. My goal is to develop 
+          increasingly complex and immersive experiences that redefine player engagement 
+          and interactivity.
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="Images/MicheleMastroberti-removebg-preview.png" alt="Profile Photo" class="profile-photo"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Researches -->
+  <section id="researches" class="animate-on-scroll researches-anim">
+    <h2>Researches</h2>
+    <div class="section-line"></div>
+
+    <div class="researches-container">
+      <div class="research-box">
+        <img src="Images/JA3.png" alt="Research 1" />
+        <h3>
+          Design and Implementation of a System for Analysis and Blocking of
+          Malicious Encrypted Traffic
+        </h3>
+        <p>
+          In today's rapidly evolving digital landscape, the widespread use of
+          encryption in key protocols poses an unprecedented challenge for corporate
+          network security. The increased interconnection of networks and digital
+          technology expansion have rendered traditional firewalls less effective,
+          as they struggle to provide robust defense. Deep packet inspection (DPI)
+          has proven inconsistent and often inadequate.
+          <br><br>
+          This growing challenge demands a sophisticated yet lightweight solution
+          that can penetrate the encryption barrier to protect networks. As cyber
+          threats become more advanced, there is a pressing need for innovative
+          approaches that stay ahead of attackers while safeguarding sensitive data.
+          <br><br>
+          In this context, this thesis introduces an innovative tool for securing
+          encrypted network traffic. It provides precise network analysis,
+          efficiently identifying and blocking suspicious activities while
+          maintaining data confidentiality and overall system security.
+        </p>
+        <a
+          href="Thesis.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button-thesis"
+        >
+          Read Thesis (ITA 🇮🇹)
+        </a>
+      </div>
+
+      <div class="research-box">
+        <img src="Images/CapAI.png" alt="Research 2" />
+        <h3>Assurance Evaluation of AI Models (on going)</h3>
+        <p>
+          The thesis aims to define and implement assurance checks for artificial
+          intelligence models. These checks will focus on various aspects that
+          impact the final model and its application, such as the training dataset,
+          the training process, and the resulting model. The evaluations will assess
+          several non-functional properties, including robustness to specific attacks
+          and fairness.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="animate-on-scroll projects-anim">
+    <h2>Projects</h2>
+    <div class="section-line"></div>
+
+    <!-- Carosello DESKTOP (≥992px) -->
+    <div id="projects-desktop" class="carousel-container">
+      <!-- Freccia sinistra -->
+      <button class="carousel-arrow left-arrow">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <!-- 4 slide da 2 progetti -->
+      <div class="projects-container" data-current-index="0">
+        <!-- Slide 1 -->
+        <div class="project-group active">
+          <div class="project-box">
+            <h3>Human Activity Recognition with LSTM</h3>
+            <p>
+              This project focuses on Human Activity Recognition (HAR) using LSTM-based 
+              neural networks. The goal is to classify different human activities 
+              based on motion sensor data.
+            </p>
+            <div class="button-container">
+              <a 
+                href="https://huggingface.co/Mic52/Human-Activity-Recognition" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-solid fa-brain"></i> View on Hugging Face
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">DeepLearning</span>
+              <span class="tag">TimeSeriesClassification</span>
+            </div>
+          </div>
+
+          <div class="project-box">
+            <h3>Detecting Sensitive Attributes with Mutual Information & Feature Importance</h3>
+            <p>
+              This project analyzes datasets to identify the most important and potentially 
+              sensitive variables using mutual information and feature importance techniques. 
+              It helps ensure fairness in machine learning models by detecting attributes 
+              that could introduce bias or disproportionately affect model outcomes.
+            </p>
+            <div class="button-container">
+              <a 
+                href="https://github.com/Mic52M/MostImportantVarEvaluation" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">FairnessInML</span>
+              <span class="tag">FeatureSelection</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="project-group">
+          <div class="project-box">
+            <h3>Indipendent Component Analysis</h3>
+            <p>
+              IcaDevops is used to automate dataset quality assessment in MLOps pipelines. 
+              It helps determine whether a dataset is suitable for machine learning by 
+              extracting independent components using ICA and evaluating their non-Gaussianity 
+              with kurtosis.
+            </p>
+            <div class="button-container">
+              <a 
+                href="https://github.com/Mic52M/IcaDevops" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">DataPreprocessing</span>
+              <span class="tag">MLOps</span>
+            </div>
+          </div>
+
+          <div class="project-box">
+            <h3>Identification of At-Risk Data via Kernelized SVMs</h3>
+            <p>
+              This project implements a method to analyze and visualize risk levels in a dataset 
+              using Support Vector Machines (SVMs) with linear and polynomial kernels. 
+              The analysis identifies "at-risk" data points, assigns them to specific risk levels, 
+              and visualizes the results in risk maps and histograms.
+            </p>
+            <div class="button-container">
+              <a 
+                href="https://github.com/Mic52M/RiskAnalysisSVM" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">MachineLearning</span>
+              <span class="tag">DataVisualization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="project-group">
+          <div class="project-box">
+            <h3>Checking Fairness in Datasets</h3>
+            <p>
+              The goal is to identify potential biases in data distributions and decision-making 
+              processes. The project offers a structured way to analyze disparities in different 
+              groups, such as gender, race, or socio-economic status, through various fairness 
+              metrics and visualization tools.
+            </p>
+            <div class="button-container">
+              <a 
+                href="https://github.com/Mic52M/CheckingFairnessDatasets" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">FairnessInAI</span>
+              <span class="tag">BiasDetection</span>
+            </div>
+          </div>
+
+          <div class="project-box">
+            <h3>Checking Membership Inference attacks</h3>
+            <p>
+              This probe evaluates ONNX models to determine their vulnerability to membership 
+              inference attacks, a type of privacy threat. It analyzes the model's behavior 
+              probabilistically to assess the risk of sensitive data exposure based on 
+              its predictions.
+            </p>
+            <div class="button-container">
+              <a 
+                href="https://github.com/Mic52M/MembershipInferenceCheck" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">PrivacyAnalysis</span>
+              <span class="tag">MembershipInference</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="project-group">
+          <div class="project-box">
+            <h3>Project 7</h3>
+            <p>
+              Description of project 7.
+            </p>
+            <div class="button-container">
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">Tag1</span>
+              <span class="tag">Tag2</span>
+            </div>
+          </div>
+
+          <div class="project-box">
+            <h3>Project 8</h3>
+            <p>
+              Description of project 8.
+            </p>
+            <div class="button-container">
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">Tag1</span>
+              <span class="tag">Tag2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Freccia destra -->
+      <button class="carousel-arrow right-arrow">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Carosello MOBILE (<992px): 8 slide, 1 progetto ciascuna -->
+    <div id="projects-mobile" class="carousel-container">
+      <!-- Freccia sinistra -->
+      <button class="carousel-arrow left-arrow">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <div class="projects-container" data-current-index="0">
+        <!-- Slide 1 -->
+        <div class="project-group active">
+          <div class="project-box">
+            <h3>Human Activity Recognition with LSTM</h3>
+            <p>
+              This project focuses on Human Activity Recognition (HAR) using LSTM-based 
+              neural networks. The goal is to classify different human activities 
+              based on motion sensor data.
+            </p>
+            <div class="button-container">
+              <a 
+                href="https://huggingface.co/Mic52/Human-Activity-Recognition" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-solid fa-brain"></i> View on Hugging Face
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">DeepLearning</span>
+              <span class="tag">TimeSeriesClassification</span>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="project-group">
+          <div class="project-box">
+            <h3>Detecting Sensitive Attributes with Mutual Information & Feature Importance</h3>
+            <p>
+              This project analyzes datasets to identify the most important and potentially 
+              sensitive variables using mutual information and feature importance techniques. 
+              It helps ensure fairness in machine learning models by detecting attributes 
+              that could introduce bias or disproportionately affect model outcomes.
+            </p>
+            <div class="button-container">
+              <a 
+                href="https://github.com/Mic52M/MostImportantVarEvaluation" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">FairnessInML</span>
+              <span class="tag">FeatureSelection</span>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="project-group">
+          <div class="project-box">
+            <h3>Indipendent Component Analysis</h3>
+            <p>
+              IcaDevops is used to automate dataset quality assessment in MLOps pipelines. 
+              It helps determine whether a dataset is suitable for machine learning by 
+              extracting independent components using ICA and evaluating their non-Gaussianity 
+              with kurtosis.
+            </p>
+            <div class="button-container">
+              <a 
+                href="https://github.com/Mic52M/IcaDevops" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">DataPreprocessing</span>
+              <span class="tag">MLOps</span>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="project-group">
+          <div class="project-box">
+            <h3>Identification of At-Risk Data via Kernelized SVMs</h3>
+            <p>
+              This project implements a method to analyze and visualize risk levels in a dataset 
+              using Support Vector Machines (SVMs) with linear and polynomial kernels. 
+              The analysis identifies "at-risk" data points, assigns them to specific risk levels, 
+              and visualizes the results in risk maps and histograms.
+            </p>
+            <div class="button-container">
+              <a 
+                href="https://github.com/Mic52M/RiskAnalysisSVM" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">MachineLearning</span>
+              <span class="tag">DataVisualization</span>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 5 -->
+        <div class="project-group">
+          <div class="project-box">
+            <h3>Checking Fairness in Datasets</h3>
+            <p>
+              The goal is to identify potential biases in data distributions and decision-making 
+              processes. The project offers a structured way to analyze disparities in different 
+              groups, such as gender, race, or socio-economic status, through various fairness 
+              metrics and visualization tools.
+            </p>
+            <div class="button-container">
+              <a 
+                href="https://github.com/Mic52M/CheckingFairnessDatasets" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">FairnessInAI</span>
+              <span class="tag">BiasDetection</span>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 6 -->
+        <div class="project-group">
+          <div class="project-box">
+            <h3>Checking Membership Inference attacks</h3>
+            <p>
+              This probe evaluates ONNX models to determine their vulnerability to membership 
+              inference attacks, a type of privacy threat. It analyzes the model's behavior 
+              probabilistically to assess the risk of sensitive data exposure based on 
+              its predictions.
+            </p>
+            <div class="button-container">
+              <a 
+                href="https://github.com/Mic52M/MembershipInferenceCheck" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">PrivacyAnalysis</span>
+              <span class="tag">MembershipInference</span>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 7 -->
+        <div class="project-group">
+          <div class="project-box">
+            <h3>Project 7</h3>
+            <p>
+              Description of project 7.
+            </p>
+            <div class="button-container">
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">Tag1</span>
+              <span class="tag">Tag2</span>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 8 -->
+        <div class="project-group">
+          <div class="project-box">
+            <h3>Project 8</h3>
+            <p>
+              Description of project 8.
+            </p>
+            <div class="button-container">
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="project-button"
+              >
+                <i class="fa-brands fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <hr class="project-divider" />
+            <div class="project-tags">
+              <span class="tag">Tag1</span>
+              <span class="tag">Tag2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Freccia destra -->
+      <button class="carousel-arrow right-arrow">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="animate-on-scroll about-anim">
+    <h2>About Me</h2>
+    <div class="section-line about-line"></div>
+
+    <div class="about-container">
+      <img src="Images/MIlesmorales.gif" alt="My GIF" class="about-gif" />
+      <a
+        href="MastrobertiCV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button-thesis about-cv-btn"
+      >
+        Download CV
+      </a>
+      <p class="cv-update">Last update: March 5, 2025</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Michele Mastroberti. All rights reserved.</p>
+  </footer>
+
+  <!-- Script JS -->
+  <script src="script.js"></script>
+</body>
+</html>
