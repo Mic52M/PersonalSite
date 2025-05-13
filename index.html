@@ -124,140 +124,330 @@
         <i class="fa-solid fa-chevron-left"></i>
       </button>
 
+      
       <!-- 4 slide da 2 progetti -->
+<!-- 4 slide da 2 progetti -->
+<div class="projects-container" data-current-index="0">
+  <!-- Slide 1 - PROGETTI NUOVI -->
+  <div class="project-group active">
+    <div class="project-box">
+      <h3>GTAVI Agent Reporter</h3>
+      <p>
+        This project consists in an intelligent Reddit-monitoring agent that autonomously scans, analyzes, and classifies Reddit posts related to Grand Theft Auto VI. It performs summarization and semantic categorization using large language models, and delivers a daily report via Telegram in HTML format.
+      </p>
+      <div class="button-container">
+        <a 
+          href="https://github.com/Mic52M/Gta6AgentReporter" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project-button"
+        >
+          <i class="fa-brands fa-github"></i> View on Github
+        </a>
+      </div>
+      <hr class="project-divider" />
+      <div class="project-tags">
+        <span class="tag">AIAgents</span>
+        <span class="tag">NLP</span>
+      </div>
+    </div>
+
+    <div class="project-box">
+      <h3>TabNet Deep Model for Tachycardia Detection</h3>
+      <p>
+        This project provides a TabNet-based deep learning model trained to detect tachycardia conditions using structured data extracted from ECG waveforms in the MIMIC-IV dataset.
+        It leverages time-aligned clinical features such as RR interval and waveform axes to identify rapid heart rhythms directly from machine-collected measurements.
+      </p>
+      <div class="button-container">
+        <a 
+          href="https://huggingface.co/Mic52/tabnet-tachycardia-mimiciv" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project-button"
+        >
+          <i class="fa-brands fa-github"></i> View on Github
+        </a>
+      </div>
+      <hr class="project-divider" />
+      <div class="project-tags">
+        <span class="tag">tabnet</span>
+        <span class="tag">ecg-classification</span>
+      </div>
+    </div>
+  </div>
+  <div class="project-group active">
+    <div class="project-box">
+      <h3>Checking Membership Inference attacks</h3>
+      <p>
+        This probe evaluates ONNX models to determine their vulnerability to membership 
+        inference attacks, a type of privacy threat. It analyzes the model's behavior 
+        probabilistically to assess the risk of sensitive data exposure based on 
+        its predictions.
+      </p>
+      <div class="button-container">
+        <a 
+          href="https://github.com/Mic52M/MembershipInferenceCheck" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project-button"
+        >
+          <i class="fa-brands fa-github"></i> View on Github
+        </a>
+      </div>
+      <hr class="project-divider" />
+      <div class="project-tags">
+        <span class="tag">PrivacyAnalysis</span>
+        <span class="tag">MembershipInference</span>
+      </div>
+    </div>
+
+    <div class="project-box">
+      <h3>NPC Brain – Conversational AI for NPC Dialogue</h3>
+      <p>
+        This project lays the groundwork for developing intelligent, context-aware NPCs using Large Language Models. It demonstrates how to structure their memory, personality, and dialogue logic, setting the stage for smarter, more immersive in-game interactions.
+      </p>
+      <div class="button-container">
+        <a 
+          href="https://github.com/Mic52M/NPC_Brain" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project-button"
+        >
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+      <hr class="project-divider" />
+      <div class="project-tags">
+        <span class="tag">LLM</span>
+        <span class="tag">NPC-Intelligence</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="project-group">
+    <div class="project-box">
+      <h3>Human Activity Recognition with LSTM</h3>
+      <p>
+        This project focuses on Human Activity Recognition (HAR) using LSTM-based 
+        neural networks. The goal is to classify different human activities 
+        based on motion sensor data.
+      </p>
+      <div class="button-container">
+        <a 
+          href="https://huggingface.co/Mic52/Human-Activity-Recognition" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project-button"
+        >
+          <i class="fas fa-brain"></i> View on Hugging Face
+        </a>
+      </div>
+      <hr class="project-divider" />
+      <div class="project-tags">
+        <span class="tag">DeepLearning</span>
+        <span class="tag">TimeSeriesClassification</span>
+      </div>
+    </div>
+
+    <div class="project-box">
+      <h3>Detecting Sensitive Attributes with Mutual Information & Feature Importance</h3>
+      <p>
+        This project analyzes datasets to identify the most important and potentially 
+        sensitive variables using mutual information and feature importance techniques. 
+        It helps ensure fairness in machine learning models by detecting attributes 
+        that could introduce bias or disproportionately affect model outcomes.
+      </p>
+      <div class="button-container">
+        <a 
+          href="https://github.com/Mic52M/MostImportantVarEvaluation" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project-button"
+        >
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+      <hr class="project-divider" />
+      <div class="project-tags">
+        <span class="tag">FairnessInML</span>
+        <span class="tag">FeatureSelection</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="project-group">
+    <div class="project-box">
+      <h3>Indipendent Component Analysis</h3>
+      <p>
+        IcaDevops is used to automate dataset quality assessment in MLOps pipelines. 
+        It helps determine whether a dataset is suitable for machine learning by 
+        extracting independent components using ICA and evaluating their non-Gaussianity 
+        with kurtosis.
+      </p>
+      <div class="button-container">
+        <a 
+          href="https://github.com/Mic52M/IcaDevops" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project-button"
+        >
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+      <hr class="project-divider" />
+      <div class="project-tags">
+        <span class="tag">DataPreprocessing</span>
+        <span class="tag">MLOps</span>
+      </div>
+    </div>
+
+    <div class="project-box">
+      <h3>Identification of At-Risk Data via Kernelized SVMs</h3>
+      <p>
+        This project implements a method to analyze and visualize risk levels in a dataset 
+        using Support Vector Machines (SVMs) with linear and polynomial kernels. 
+        The analysis identifies "at-risk" data points, assigns them to specific risk levels, 
+        and visualizes the results in risk maps and histograms.
+      </p>
+      <div class="button-container">
+        <a 
+          href="https://github.com/Mic52M/RiskAnalysisSVM" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project-button"
+        >
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+      <hr class="project-divider" />
+      <div class="project-tags">
+        <span class="tag">MachineLearning</span>
+        <span class="tag">DataVisualization</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="project-group">
+    <div class="project-box">
+      <h3>Checking Fairness in Datasets</h3>
+      <p>
+        The goal is to identify potential biases in data distributions and decision-making 
+        processes. The project offers a structured way to analyze disparities in different 
+        groups, such as gender, race, or socio-economic status, through various fairness 
+        metrics and visualization tools.
+      </p>
+      <div class="button-container">
+        <a 
+          href="https://github.com/Mic52M/CheckingFairnessDatasets" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project-button"
+        >
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+      <hr class="project-divider" />
+      <div class="project-tags">
+        <span class="tag">FairnessInAI</span>
+        <span class="tag">BiasDetection</span>
+      </div>
+    </div>
+
+    <div class="project-box">
+      <h3>AiCompliance autonomous system</h3>
+      <p>
+        in progress
+      </p>
+      <div class="button-container">
+        <a 
+          href="" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="project-button"
+        >
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+      </div>
+      <hr class="project-divider" />
+      <div class="project-tags">
+        <span class="tag"></span>
+        <span class="tag"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Freccia destra -->
+      <button class="carousel-arrow right-arrow">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <!-- Carosello MOBILE (<992px): 8 slide, 1 progetto ciascuna -->
+    <div id="projects-mobile" class="carousel-container">
+      <!-- Freccia sinistra -->
+      <button class="carousel-arrow left-arrow">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
       <div class="projects-container" data-current-index="0">
         <!-- Slide 1 -->
         <div class="project-group active">
           <div class="project-box">
-            <h3>Human Activity Recognition with LSTM</h3>
+            <h3>GTAVI Agent Reporter</h3>
             <p>
-              This project focuses on Human Activity Recognition (HAR) using LSTM-based 
-              neural networks. The goal is to classify different human activities 
-              based on motion sensor data.
+              This project consists in an intelligent Reddit-monitoring agent that autonomously scans, analyzes, and classifies Reddit posts related to Grand Theft Auto VI. It performs summarization and semantic categorization using large language models, and delivers a daily report via Telegram in HTML format.
             </p>
             <div class="button-container">
               <a 
-                href="https://huggingface.co/Mic52/Human-Activity-Recognition" 
+                href="https://github.com/Mic52M/Gta6AgentReporter" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 class="project-button"
               >
-                <i class="fa-solid fa-brain"></i> View on Hugging Face
+                <i class="fa-brands fa-github"></i> View on Github
               </a>
             </div>
             <hr class="project-divider" />
             <div class="project-tags">
-              <span class="tag">DeepLearning</span>
-              <span class="tag">TimeSeriesClassification</span>
-            </div>
-          </div>
-
-          <div class="project-box">
-            <h3>Detecting Sensitive Attributes with Mutual Information & Feature Importance</h3>
-            <p>
-              This project analyzes datasets to identify the most important and potentially 
-              sensitive variables using mutual information and feature importance techniques. 
-              It helps ensure fairness in machine learning models by detecting attributes 
-              that could introduce bias or disproportionately affect model outcomes.
-            </p>
-            <div class="button-container">
-              <a 
-                href="https://github.com/Mic52M/MostImportantVarEvaluation" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="project-button"
-              >
-                <i class="fa-brands fa-github"></i> View on GitHub
-              </a>
-            </div>
-            <hr class="project-divider" />
-            <div class="project-tags">
-              <span class="tag">FairnessInML</span>
-              <span class="tag">FeatureSelection</span>
+              <span class="tag">AIAgents</span>
+              <span class="tag">NLP</span>
             </div>
           </div>
         </div>
-
+      
         <!-- Slide 2 -->
         <div class="project-group">
           <div class="project-box">
-            <h3>Indipendent Component Analysis</h3>
+            <h3>TabNet Deep Model for Tachycardia Detection</h3>
             <p>
-              IcaDevops is used to automate dataset quality assessment in MLOps pipelines. 
-              It helps determine whether a dataset is suitable for machine learning by 
-              extracting independent components using ICA and evaluating their non-Gaussianity 
-              with kurtosis.
+              This project provides a TabNet-based deep learning model trained to detect tachycardia conditions using structured data extracted from ECG waveforms in the MIMIC-IV dataset.
+              It leverages time-aligned clinical features such as RR interval and waveform axes to identify rapid heart rhythms directly from machine-collected measurements.
             </p>
             <div class="button-container">
               <a 
-                href="https://github.com/Mic52M/IcaDevops" 
+                href="https://huggingface.co/Mic52/tabnet-tachycardia-mimiciv" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 class="project-button"
               >
-                <i class="fa-brands fa-github"></i> View on GitHub
+                <i class="fa-brands fa-github"></i> View on Github
               </a>
             </div>
             <hr class="project-divider" />
             <div class="project-tags">
-              <span class="tag">DataPreprocessing</span>
-              <span class="tag">MLOps</span>
-            </div>
-          </div>
-
-          <div class="project-box">
-            <h3>Identification of At-Risk Data via Kernelized SVMs</h3>
-            <p>
-              This project implements a method to analyze and visualize risk levels in a dataset 
-              using Support Vector Machines (SVMs) with linear and polynomial kernels. 
-              The analysis identifies "at-risk" data points, assigns them to specific risk levels, 
-              and visualizes the results in risk maps and histograms.
-            </p>
-            <div class="button-container">
-              <a 
-                href="https://github.com/Mic52M/RiskAnalysisSVM" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="project-button"
-              >
-                <i class="fa-brands fa-github"></i> View on GitHub
-              </a>
-            </div>
-            <hr class="project-divider" />
-            <div class="project-tags">
-              <span class="tag">MachineLearning</span>
-              <span class="tag">DataVisualization</span>
+              <span class="tag">tabnet</span>
+              <span class="tag">ecg-classification</span>
             </div>
           </div>
         </div>
-
+      
         <!-- Slide 3 -->
         <div class="project-group">
-          <div class="project-box">
-            <h3>Checking Fairness in Datasets</h3>
-            <p>
-              The goal is to identify potential biases in data distributions and decision-making 
-              processes. The project offers a structured way to analyze disparities in different 
-              groups, such as gender, race, or socio-economic status, through various fairness 
-              metrics and visualization tools.
-            </p>
-            <div class="button-container">
-              <a 
-                href="https://github.com/Mic52M/CheckingFairnessDatasets" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="project-button"
-              >
-                <i class="fa-brands fa-github"></i> View on GitHub
-              </a>
-            </div>
-            <hr class="project-divider" />
-            <div class="project-tags">
-              <span class="tag">FairnessInAI</span>
-              <span class="tag">BiasDetection</span>
-            </div>
-          </div>
-
           <div class="project-box">
             <h3>Checking Membership Inference attacks</h3>
             <p>
@@ -273,7 +463,7 @@
                 rel="noopener noreferrer" 
                 class="project-button"
               >
-                <i class="fa-brands fa-github"></i> View on GitHub
+                <i class="fa-brands fa-github"></i> View on Github
               </a>
             </div>
             <hr class="project-divider" />
@@ -283,32 +473,9 @@
             </div>
           </div>
         </div>
-
+      
         <!-- Slide 4 -->
         <div class="project-group">
-          <div class="project-box">
-            <h3>TabNet Deep Model for Tachycardia Detection</h3>
-            <p>
-              This project provides a TabNet-based deep learning model trained to detect tachycardia conditions using structured data extracted from ECG waveforms in the MIMIC-IV dataset.
-              It leverages time-aligned clinical features such as RR interval and waveform axes to identify rapid heart rhythms directly from machine-collected measurements.
-            </p>
-            <div class="button-container">
-              <a 
-                href="https://huggingface.co/Mic52/tabnet-tachycardia-mimiciv" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="project-button"
-              >
-                <i class="fa-brands fa-brain"></i> View on huggingface
-              </a>
-            </div>
-            <hr class="project-divider" />
-            <div class="project-tags">
-              <span class="tag">tabnet</span>
-              <span class="tag">ecg-classification</span>
-            </div>
-          </div>
-
           <div class="project-box">
             <h3>NPC Brain – Conversational AI for NPC Dialogue</h3>
             <p>
@@ -331,24 +498,9 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Freccia destra -->
-      <button class="carousel-arrow right-arrow">
-        <i class="fa-solid fa-chevron-right"></i>
-      </button>
-    </div>
-
-    <!-- Carosello MOBILE (<992px): 8 slide, 1 progetto ciascuna -->
-    <div id="projects-mobile" class="carousel-container">
-      <!-- Freccia sinistra -->
-      <button class="carousel-arrow left-arrow">
-        <i class="fa-solid fa-chevron-left"></i>
-      </button>
-
-      <div class="projects-container" data-current-index="0">
-        <!-- Slide 1 -->
-        <div class="project-group active">
+      
+        <!-- Slide 5 -->
+        <div class="project-group">
           <div class="project-box">
             <h3>Human Activity Recognition with LSTM</h3>
             <p>
@@ -363,7 +515,7 @@
                 rel="noopener noreferrer" 
                 class="project-button"
               >
-                <i class="fa-solid fa-brain"></i> View on Hugging Face
+                <i class="fas fa-brain"></i> View on Hugging Face
               </a>
             </div>
             <hr class="project-divider" />
@@ -373,7 +525,8 @@
             </div>
           </div>
         </div>
-        <!-- Slide 2 -->
+      
+        <!-- Slide 6 -->
         <div class="project-group">
           <div class="project-box">
             <h3>Detecting Sensitive Attributes with Mutual Information & Feature Importance</h3>
@@ -400,7 +553,8 @@
             </div>
           </div>
         </div>
-        <!-- Slide 3 -->
+      
+        <!-- Slide 7 -->
         <div class="project-group">
           <div class="project-box">
             <h3>Indipendent Component Analysis</h3>
@@ -427,7 +581,8 @@
             </div>
           </div>
         </div>
-        <!-- Slide 4 -->
+      
+        <!-- Slide 8 -->
         <div class="project-group">
           <div class="project-box">
             <h3>Identification of At-Risk Data via Kernelized SVMs</h3>
@@ -454,7 +609,8 @@
             </div>
           </div>
         </div>
-        <!-- Slide 5 -->
+      
+        <!-- Slide 9 -->
         <div class="project-group">
           <div class="project-box">
             <h3>Checking Fairness in Datasets</h3>
@@ -481,19 +637,17 @@
             </div>
           </div>
         </div>
-        <!-- Slide 6 -->
+      
+        <!-- Slide 10 -->
         <div class="project-group">
           <div class="project-box">
-            <h3>Checking Membership Inference attacks</h3>
+            <h3>AiCompliance autonomous system</h3>
             <p>
-              This probe evaluates ONNX models to determine their vulnerability to membership 
-              inference attacks, a type of privacy threat. It analyzes the model's behavior 
-              probabilistically to assess the risk of sensitive data exposure based on 
-              its predictions.
+              in progress
             </p>
             <div class="button-container">
               <a 
-                href="https://github.com/Mic52M/MembershipInferenceCheck" 
+                href="" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 class="project-button"
@@ -503,60 +657,13 @@
             </div>
             <hr class="project-divider" />
             <div class="project-tags">
-              <span class="tag">PrivacyAnalysis</span>
-              <span class="tag">MembershipInference</span>
-            </div>
-          </div>
-        </div>
-        <!-- Slide 7 -->
-        <div class="project-group">
-          <div class="project-box">
-            <h3>Project 7</h3>
-            <p>
-              Description of project 7.
-            </p>
-            <div class="button-container">
-              <a 
-                href="#" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="project-button"
-              >
-                <i class="fa-brands fa-github"></i> View on GitHub
-              </a>
-            </div>
-            <hr class="project-divider" />
-            <div class="project-tags">
-              <span class="tag">Tag1</span>
-              <span class="tag">Tag2</span>
-            </div>
-          </div>
-        </div>
-        <!-- Slide 8 -->
-        <div class="project-group">
-          <div class="project-box">
-            <h3>Project 8</h3>
-            <p>
-              Description of project 8.
-            </p>
-            <div class="button-container">
-              <a 
-                href="#" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="project-button"
-              >
-                <i class="fa-brands fa-github"></i> View on GitHub
-              </a>
-            </div>
-            <hr class="project-divider" />
-            <div class="project-tags">
-              <span class="tag">Tag1</span>
-              <span class="tag">Tag2</span>
+              <span class="tag"></span>
+              <span class="tag"></span>
             </div>
           </div>
         </div>
       </div>
+      
 
       <!-- Freccia destra -->
       <button class="carousel-arrow right-arrow">
